@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title>To Do List - App</title>
+    </head>
+    <body>
+        <header>
+            <h1>To Do List</h1>
+        </header>
+        <main>
+            <section class="forms">
+                <form class="form-add">
+                    <h2>Insert new to-do</h2>
+                    <input type="text" name="add" placeholder="new to-do" autocomplete="off" autofocus />
+                    <button><i class="fas fa-plus fa-sm"></i></button>
+                </form>
+                <form class="form-search">
+                    <h2>Search to-do by name</h2>
+                    <input type="text" name="search" placeholder="to-do name" autocomplete="off"/>
+                </form>
+            </section>
+            <section class="todo-list-container">
+                <ul class="todos-container">
+                    <li class="flex-box" data-todo="Estudar Inglês">
+                        <span>Estudar Inglês</span>
+                        <i class="far fa-trash-alt" data-trash="Estudar Inglês"></i>
+                    </li>
+                    <li class="flex-box" data-todo="Estudar Espanhol">
+                        <span>Estudar Espanhol</span>
+                        <i class="far fa-trash-alt" data-trash="Estudar Espanhol"></i>
+                    </li>
+                </ul>
+                <div class="controls">
+                    <h5>Quantity to do: <span class="total-todos"></span></h5>
+                    <button class="reset-all">Delete all</button>
+                </div>
+            </section>
+        </main>
+        <script src="./app.js"></script>
+    </body>
+</html>
