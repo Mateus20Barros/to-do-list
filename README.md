@@ -6,7 +6,7 @@
 
 **``⚠️ It's under development and some things can be added to it.``** <br>
 
-**:label: This is *to-do list*, a front-end project where I could pratic my knowledges in it.** <br>
+**:label: This is ``to-do list`` a front-end project where I could pratic my knowledges in it.** <br>
 **:label: It's responsive page across many different ``screens 🖥️`` and ``devices 💻 📱``**
 
 <br>
@@ -15,7 +15,7 @@
 
 ## :rocket: Technologies
 
-**To build this project I used only three basic most important technologies in Web Development.**
+**To build this project I used only three most important basic technologies in Web Development.**
 
 <div display="inline-block">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="30" height="40">
