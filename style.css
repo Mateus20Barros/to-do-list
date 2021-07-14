@@ -16,7 +16,6 @@ header {
     align-items: center;
     justify-content: center;
     border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
     color: rgba(255, 255, 255, .9);
     background-color: rgba(0, 255, 0, .7);
 }
