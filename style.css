@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgba(0, 0, 0, .9);
+    color: rgba(255, 255, 255, .9);
+    min-width: 500px;
+}
+
+header {
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: rgba(255, 255, 255, .9);
+    background-color: rgba(0, 255, 0, .7);
+}
+
+header h1 {
+    font-size: 3rem;
+    text-shadow: 1px 1px 3px #000;
+    font-family: 'Fredoka One', cursive;
+}
+
+main {
+    display: flex;
+    margin-top: 8%;
+}
+
+.forms {
+    width: 40%;
+    padding: 2%;
+    display: block;
+    margin: 0 auto;
+    box-shadow: inset 0px 0px 5px 4px #fff;
+}
+
+.forms form {
+    width: 100%;
+    padding: 2%;
+    margin-top: 3%;
+}
+
+.forms h2 {
+    margin: 2% 0;
+    color: #fff;
+    font-family: cursive;
+}
+
+.forms input[type="text"] {
+    width: 80%;
+    border: none;
+    outline: none;
+    padding: 1.5%;
+    color: #fff;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    background: inherit;
+    font-family: cursive;
+    box-shadow: 0px 0px 0px 2px #fff;
+}
+
+.forms input[type="text"]::placeholder {
+    color: rgba(255, 255, 255, .3);
+}
+
+.forms .form-search input {
+    width: 100%;
+}
+
+.forms input[type="text"]:focus {
+    box-shadow: 0px 0px 6px 3px rgba(255, 255, 255, 1);
+}
+
+.forms .form-add button {
+    width: 18%;
+    padding: 1.5%;
+    outline: none;
+    transition: 1s;
+    margin-left: 1%;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    justify-content: center;
+    color: rgba(0, 255, 0, 1);
+    background: rgba(0, 255, 0, .1);
+    border: 2px solid rgba(0, 255, 0, 1);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.forms .form-add button:hover {
+    color: rgba(0, 0, 0, .9);
+    background: rgba(0, 255, 0, 1);
+}
+
+.todo-list-container {
+    width: 40%;
+    padding: 2%;
+    margin: 0 auto;
+    box-shadow: inset 0px 0px 5px 4px #fff;
+}
+
+.todo-list-container .controls {
+    display: flex;
+    margin-top: 4%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.todo-list-container .controls button {
+    width: 25%;
+    padding: .5%;
+    outline: none;
+    cursor: pointer;
+    transition: .6s;
+    font-weight: bold;
+    border-radius: 20px;
+    font-family: cursive;
+    color: rgba(255, 0, 0, 1);
+    border: 2px solid rgba(255, 0, 0, 1);
+    background-color: rgba(255, 0, 0, .1);
+}
+
+.todo-list-container .controls button:hover {
+    color: rgba(255, 255, 255, .9);
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.todo-list-container h5 {
+    width: 30%;
+    font-family: cursive;
+}
+
+.todo-list-container h5 span {
+    color: rgba(0, 255, 0, .8);
+}
+
+.todo-list-container .todos-container {
+    padding: 0 3%;
+    height: 245px;
+    overflow: auto;
+}
+
+.todo-list-container .todos-container::-webkit-scrollbar {
+    width: 15px;
+}
+
+.todo-list-container .todos-container::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.todo-list-container .todos-container::-webkit-scrollbar-thumb {
+    padding: 2px;
+    border-radius: 50px;
+    color: rgba(255, 255, 255, .9);
+    background: rgba(0, 255, 0, 1);
+}
+
+.todo-list-container .todos-container .flex-box {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}
+
+.todo-list-container .todos-container li {
+    justify-content: space-between;
+    padding: 2%;
+    width: 100%;
+    list-style: none;
+    margin-bottom: 1%;
+    font-weight: bold;
+    font-style: italic;
+    border-radius: 15px;
+    animation: opacity 1s ease;
+    color: rgba(0, 0, 0, .9);
+    background: rgba(0, 255, 0, .8);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.todo-list-container .todos-container li span {
+    margin-left: 2%;
+}
+
+.todo-list-container .todos-container li i {
+    margin-right: 2%;
+}
+
+@keyframes opacity {
+    from { 
+        transform: scale(.5); 
+    } 
+    to { 
+        transform: scale(1); 
+    }
+}
+
+.todo-list-container .todos-container li i:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 1150px) and (min-width: 600.99px) {
+    main {
+        display: block;
+        padding: 2%;
+    }
+
+    .forms {
+        width: 100%;
+    }
+
+    .forms form {
+        padding: 1%;
+        margin-top: 2%;
+    }
+
+    .todo-list-container {
+        margin-top: 4%;
+        width: 100%;
+        padding: 5%;
+    }
+}
+
+@media (max-width: 601px) {
+    main {
+        display: block;
+        padding: 2%;
+    }
+
+    .forms {
+        width: 100%;
+    }
+
+    .todo-list-container {
+        margin-top: 4%;
+        width: 100%;
+        padding: 4%;
+    }
+
+    .forms input[type="text"] {
+        width: 100%;
+    }
+
+    .forms h2 {
+        margin-top: -2%;
+        color: #fff;
+        font-family: cursive;
+    }
+
+    .forms .form-add button {
+        width: 30%;
+        margin-left: 0;
+        margin-top: 2%;
+    }
+}
