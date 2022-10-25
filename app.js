@@ -1,4 +1,4 @@
-const formAddTodo = document.querySelector('.form-add')
+const formAddTodo = document.querySelector('.form-add') 
 const formSearch = document.querySelector('.form-search')
 const todosContainer = document.querySelector('.todos-container')
 const showTotalTodos = document.querySelector('.total-todos')
