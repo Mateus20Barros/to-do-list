@@ -194,12 +194,8 @@ main {
 }
 
 @keyframes opacity {
-    from { 
-        transform: scale(.5); 
-    } 
-    to { 
-        transform: scale(1); 
-    }
+    from { transform: scale(.5); } 
+    to { transform: scale(1); }
 }
 
 .todo-list-container .todos-container li i:hover {
